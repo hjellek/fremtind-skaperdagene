@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket test</title>
+</head>
+<body>
+    <p id="socket-test"></p>
+    <button onClick="restartServer()">RESTART</button>
+</body>
+<script>
+    const ws = new WebSocket('ws://localhost:1337');
+    ws.onopen = function(){
+      console.log("connected");
+    }
+    ws.onmessage = function(evt) {
+        console.log(evt);
+        const received_msg = evt.data;
+        const el = document.getElementById("socket-test");
+        el.textContent = received_msg;
+    }
+    ws.onclose = function() {
+      console.log("dead")
+    }
+    function restartServer() {
+        console.log("restarting")
+        ws.send("Restarting");
+    }
+
+</script>
+

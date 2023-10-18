@@ -31,4 +31,6 @@
 
 ### Knapper / brytere
 - Store knapper
-- 
+- Rotasjonsbryter
+- Trykknapper
+- Tiltbryter (av og på mellom horisental og vertikal posisjon)

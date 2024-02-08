@@ -1,11 +1,17 @@
 # Skaperdager
 
-## Guider / eksempler
+## Guider
+[Internettilgang](docs/internett.md)
+
+[git tilgang](docs/git.md)
+
+## Eksempler
+- [Knapper, RFID og websocket](buttons-rfid-websocket/README.md)
 
 ## Utstyr
 
 ### Kontrollere
-- Raspberry Pi 3 og 4 (https://www.raspberrypi.com/)
+- Raspberry Pi 3 og 4 (https://www.raspberrypi.com/) (https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2023/03/Raspberry-Pi-Pinout-Random-Nerd-Tutorials.png?quality=100&strip=all&ssl=1)
 - Particle Photon (https://docs.particle.io/photon/)
 - ESP32 wroom (https://www.elkim.no/produkt/esp32-wroom-32u-38p-usb-ext-ant/)
 
